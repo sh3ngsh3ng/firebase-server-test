@@ -1,0 +1,1 @@
+# Demo for connecting express to firebase emulator
