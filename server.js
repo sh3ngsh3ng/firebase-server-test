@@ -1,6 +1,6 @@
 const express = require("express");
 const admin = require("firebase-admin");
-const { getAuth, connectAuthEmulator } = require('firebase-admin/auth');
+const { getAuth } = require('firebase-admin/auth');
 require("dotenv").config();
 
 // create an instance of express app
@@ -34,22 +34,3 @@ main();
 app.listen(3000, () => {
     console.log("Server has started");
 });
-
-
-
-
-
-// if (useEmulator) {
-//     process.env['FIRESTORE_EMULATOR_HOST'] = 'localhost:8080';
-// }
-
-// process.env.FIREBASE_AUTH_EMULATOR_HOST = "localhost:9099"
-// const { useEmulator } = require('firebase-admin/auth');
-// const firebaseApp = admin.initializeApp({ projectId: "firebase-server-test" });
-
-// if (process.env.NODE_ENV === 'development') {
-// useEmulator(admin.auth(), 'localhost:9099');
-// }
-
-// const auth = getAuth(firebaseApp)
-// useEmulator(auth, process.env.FIREBASE_AUTH_EMULATOR_HOST)
