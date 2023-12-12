@@ -14,7 +14,7 @@ console.log(adminApp)
 
 // get all users
 const getAllUsers = async () => {
-    // console.log(await adminApp.auth().listUsers()) // same as below
+    // console.log(await getAuth().listUsers()) // same as below
     console.log(await adminApp.auth().listUsers())
 }
 
@@ -25,8 +25,8 @@ const getUserData = async (uid) => {
 
 async function main() {
     // console.log(getAuth())
-    // getAllUsers()
-    getUserData("FufB7Y6diV5HQ0tRiEIUu9OCDGEA") // change it accordingly to what was created in emulator
+    getAllUsers()
+    // getUserData("FufB7Y6diV5HQ0tRiEIUu9OCDGEA") // change it accordingly to what was created in emulator
 }
 
 main();
